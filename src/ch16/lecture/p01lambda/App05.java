@@ -1,0 +1,21 @@
+package ch16.lecture.p01lambda;
+
+public class App05 {
+    public static void main(String[] args) {
+        MyInterface05 o = (a) -> {
+            System.out.println(a + "이다.");
+            System.out.println(a + "입니다.");
+        };
+
+        // 파라미터 목록이 하나면 () 생략 가능
+        MyInterface05 s = a -> {
+            System.out.println(a + "이다.");
+            System.out.println(a + "입니다.");
+        };
+        MyInterface05 t = a -> System.out.println(a + "이다.");
+    }
+}
+
+interface MyInterface05 {
+    void method(int a);
+}
