@@ -1,6 +1,4 @@
-package ch15.leetCode.p119;
-
-import ch15.leetCode.p1431.Soultion;
+package leetCode.p119;
 
 import java.util.ArrayList;
 import java.util.List;

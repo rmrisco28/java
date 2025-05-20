@@ -1,6 +1,5 @@
-package ch15.leetCode.p1200;
+package leetCode.p1200;
 
-import java.sql.Array;
 import java.util.*;
 
 public class Solution {

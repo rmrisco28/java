@@ -1,9 +1,6 @@
-package ch15.leetCode.p1046;
-
-import ch15.leetCode.p1431.Soultion;
+package leetCode.p1046;
 
 import java.util.ArrayList;
-import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
 
@@ -60,7 +57,7 @@ public class Solution {
             list.remove(0);
             list.remove(0);
         }
-   
+
         System.out.println(list);
     }
 }

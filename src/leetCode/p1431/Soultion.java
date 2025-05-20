@@ -1,6 +1,5 @@
-package ch15.leetCode.p1431;
+package leetCode.p1431;
 
-import java.sql.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
