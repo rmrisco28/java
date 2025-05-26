@@ -1,0 +1,27 @@
+package ch18.lecture.p01output;
+
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.OutputStream;
+import java.util.TreeSet;
+
+public class App04 {
+    public static void main(String[] args) throws IOException, InterruptedException {
+        String fileName = "C:/Temp/out4.data";
+        OutputStream os = new FileOutputStream(fileName);
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println(i + "번째 쓰는 중");
+            os.write(1);
+            Thread.sleep(2000);
+        }
+        System.out.println("출력 완료");
+
+        // 사용한 stream(자원, resource)를 닫음
+        // open한 곳에서 close 해야함.
+        // 대신 try-with resources 구조를 사용 할 경우
+        // 자동으로 호출 되기 때문에 직접 사용하지 않아도 된다.
+        os.close();
+    }
+}
